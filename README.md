@@ -15,6 +15,17 @@ A curated collection of reusable agent skills for AI coding assistants.
 
 ## Installation / 安装
 
+### Via skills.sh / 通过 skills.sh 安装
+
+```bash
+npx skills add manchan4869/agent-skills
+# or specify skills / 或指定安装某个技能
+npx skills add manchan4869/agent-skills --skill amap-lbs-skill
+npx skills add manchan4869/agent-skills --skill qgis4-qt6-compat
+```
+
+### Manually / 手动安装
+
 Copy the desired skill directory into your agent's skills folder (e.g. `~/.agents/skills/` for opencode), or reference it directly.
 
 将所需技能目录复制到你的 Agent 技能文件夹（如 opencode 的 `~/.agents/skills/`），或直接引用。
