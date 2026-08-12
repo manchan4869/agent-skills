@@ -1,5 +1,7 @@
 # Agent Skills Collection / 精选 Agent 技能集
 
+[![skills.sh](https://skills.sh/b/manchan4869/agent-skills)](https://skills.sh/manchan4869/agent-skills)
+
 A curated collection of reusable agent skills for AI coding assistants.
 
 精选可复用的 AI Agent 技能合集，供 AI 编程助手使用。
