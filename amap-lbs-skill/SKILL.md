@@ -2,13 +2,6 @@
 name: amap-lbs-skill
 description: 高德地图综合服务（零依赖 curl），支持POI搜索、路径规划、天气、行政区域、输入提示、坐标转换、IP定位、静态地图、旅游规划、热力图及离线编码表
 version: 4.0.0
-metadata:
-  openclaw:
-    requires:
-      env:
-        - AMAP_WEBSERVICE_KEY
-    primaryEnv: AMAP_WEBSERVICE_KEY
-    homepage: https://lbs.amap.com/api/webservice/summary
 ---
 
 # 高德地图综合服务 Skill

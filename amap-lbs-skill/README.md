@@ -4,6 +4,36 @@
 
 **零运行时依赖**：仅使用 `curl` 调用高德 REST API，无需 node/npm/任何第三方包。
 
+---
+
+# AMap LBS Service Skill (English Summary)
+
+A zero-dependency agent skill for [AMap (Gaode) Web Service APIs](https://lbs.amap.com/api/webservice/summary) — everything is plain `curl`, no node/npm/third-party packages.
+
+**Capabilities:**
+
+- POI search (keyword / around / polygon / by-ID)
+- Input tips (search-as-you-type suggestions)
+- Route planning v1 (walking, driving, cycling, transit) + v2 (v5, incl. e-bike)
+- Geocoding & reverse geocoding
+- Weather (current + forecast)
+- District queries (levels / adcode / boundary)
+- Coordinate conversion (GPS/Baidu → AMap)
+- IP geolocation
+- Static map image generation
+- Travel planner assistant, heatmap & map-visualization links
+- Offline code tables (POI categories / city adcodes / overseas adcodes)
+- Commercial API docs (traffic events, bus info, track snapping)
+
+**Setup:**
+
+1. Get a key from the [AMap Open Platform](https://lbs.amap.com/api/webservice/create-project-and-key)
+2. `cp config.example.json config.json` and fill in your key, or export `AMAP_WEBSERVICE_KEY`
+
+Note: the full instructions below are in Chinese; key setup and usage examples are at the bottom of this file.
+
+---
+
 ## 功能特性
 
 - ✅ 高德 Web Service Key 管理（环境变量 / config.json）
