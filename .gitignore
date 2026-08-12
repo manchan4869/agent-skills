@@ -5,3 +5,6 @@ config.json
 .DS_Store
 node_modules/
 __pycache__/
+
+# local maintainer script (not for public)
+sync.ps1
