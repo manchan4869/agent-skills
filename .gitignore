@@ -6,5 +6,6 @@ config.json
 node_modules/
 __pycache__/
 
-# local maintainer script (not for public)
+# local maintainer scripts/notes (not for public)
 sync.ps1
+AGENTS.md
