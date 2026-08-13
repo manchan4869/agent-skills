@@ -1,7 +1,7 @@
 ---
 name: pyqgis-api-reference
 description: Use when writing QGIS 4 plugins or scripts and need exact PyQGIS API signatures, parameters, enums, return types, or deprecation status for a specific QGIS version (resolved by probing the machine's existing env vars / installed QGIS, default 4.2); when the QGIS-Documentation cookbook (4.4-dev) may drift from the target version; or when checking whether an API changed between QGIS 3 and QGIS 4. Do NOT use for user-manual behavior questions (use the docs.qgis.org user manual instead).
-version: 1.1.0
+version: 1.2.0
 ---
 
 # PyQGIS API Reference (qgis.org/pyqgis)
@@ -17,7 +17,7 @@ Prefer probing the machine over guessing. In order:
 1. **Existing QGIS env vars** (never invent new ones): `OSGEO4W_ROOT` or `QGIS_PREFIX_PATH` (pwsh: `echo $env:OSGEO4W_ROOT`). They point at the install dir:
    - Standalone installs encode the version in the path (e.g. `C:\Program Files\QGIS 4.2.0`) → parse `QGIS (\d+\.\d+)`.
    - OSGeo4W paths carry no version (e.g. `D:\OSGeo4W`) → run `& "$env:OSGEO4W_ROOT\bin\qgis-bin.exe" --version` (or `qgis --version`); it prints e.g. `QGIS 4.2.0-Belém do Pará`.
-2. **`qgis --version` on PATH** if those env vars are absent.
+2. **CLI on PATH** if those env vars are absent: `qgis --version` or `qgis-bin --version` (standalone installs ship only `qgis-bin.exe`, which may not be on PATH — check both, ignore failures).
 3. **QGIS MCP probe** (only when MCP tools are available): `qgis_list_qgis_instances` reports each reachable instance's `qgis_version` (e.g. `4.2.0-Belém do Pará`).
 4. **Default `4.2`** (current stable at skill creation). If in doubt whether a newer stable exists, check the version selector at the bottom of any `https://qgis.org/pyqgis/{v}/` page.
 

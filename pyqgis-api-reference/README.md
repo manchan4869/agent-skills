@@ -1,6 +1,6 @@
 # pyqgis-api-reference
 
-Find exact QGIS 4.2 PyQGIS API signatures, parameters, enums, and deprecation status.
+Find exact PyQGIS API signatures, parameters, enums, and deprecation status for a target QGIS version.
 
 ## Overview
 
@@ -10,14 +10,14 @@ Target version is resolved by probing the machine instead of guessing: existing 
 
 ## What's Inside
 
-- `SKILL.md` — lookup workflow: URL patterns per module (`core`/`gui`/`analysis`/`processing`/`server`/`_3d`), version pinning, how to read 100KB+ class pages (grep the saved fetch, use `release-4_2` C++ headers to resolve misaligned deprecation markers), and verified QGIS 4 vs 3 pitfalls.
+- `SKILL.md` — lookup workflow: URL patterns per module (`core`/`gui`/`analysis`/`processing`/`server`/`_3d`), version probing, how to read 100KB+ class pages (grep the saved fetch, use the version-matching release-branch C++ headers to resolve misaligned deprecation markers), and verified QGIS 4 vs 3 pitfalls.
 
 ## Usage
 
 1. When a QGIS 4 plugin/script needs an exact signature or deprecation status, load this skill.
 2. Resolve the target version per the probing chain (env vars → `qgis --version` → MCP instance → default stable).
 3. Follow the URL pattern directly — no guessing: `https://qgis.org/pyqgis/{version}/{module}/QgsClassName.html`.
-3. For ambiguous deprecation markers, cross-check the C++ header on the `release-4_2` branch of `github.com/qgis/QGIS`.
+4. For ambiguous deprecation markers, cross-check the C++ header on the release branch matching the resolved version (e.g. `release-4_2`) of `github.com/qgis/QGIS`.
 
 ## References
 
