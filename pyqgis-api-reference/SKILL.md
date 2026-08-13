@@ -1,6 +1,6 @@
 ---
 name: pyqgis-api-reference
-description: Use when writing QGIS 4 plugins or scripts and need exact PyQGIS API signatures, parameters, enums, return types, or deprecation status for a specific QGIS version (resolved by probing the machine's existing env vars / installed QGIS, default 4.2); when the local QGIS-Documentation cookbook (4.4-dev) may drift from the target version; or when checking whether an API changed between QGIS 3 and QGIS 4. Do NOT use for user-manual behavior questions (use qgis-docs instead).
+description: Use when writing QGIS 4 plugins or scripts and need exact PyQGIS API signatures, parameters, enums, return types, or deprecation status for a specific QGIS version (resolved by probing the machine's existing env vars / installed QGIS, default 4.2); when the QGIS-Documentation cookbook (4.4-dev) may drift from the target version; or when checking whether an API changed between QGIS 3 and QGIS 4. Do NOT use for user-manual behavior questions (use the docs.qgis.org user manual instead).
 version: 1.1.0
 ---
 
@@ -8,7 +8,7 @@ version: 1.1.0
 
 ## Overview
 
-The authoritative, version-pinned reference for the PyQGIS API is the Sphinx-generated site at `https://qgis.org/pyqgis/{version}/` — built from Doxygen comments in the QGIS C++ source, so signatures there are exact. Local QGIS-Documentation cookbook = 4.4 dev — **may drift from any released version**. When precision matters, verify against the resolved pyqgis version.
+The authoritative, version-pinned reference for the PyQGIS API is the Sphinx-generated site at `https://qgis.org/pyqgis/{version}/` — built from Doxygen comments in the QGIS C++ source, so signatures there are exact. The QGIS-Documentation cookbook tracks the dev branch (4.4) — **it may drift from any released version**. When precision matters, verify against the resolved pyqgis version.
 
 ## Version Selection — resolve `{version}` FIRST, before fetching anything
 
@@ -40,7 +40,7 @@ Modules: `core`, `gui`, `analysis`, `processing`, `server`, `_3d`. Class pages e
 
 ## Workflow
 
-1. **Cookbook first**: consult local qgis-docs cookbook for usage patterns, then this reference for exact signatures.
+1. **Cookbook first**: consult the QGIS-Documentation cookbook (https://docs.qgis.org) for usage patterns, then this reference for exact signatures.
 2. **Fetch the class page** (webfetch). Pages are HUGE (100KB+, e.g. QgsVectorLayer) — the fetch is auto-truncated and the full output saved to a tool-output file.
 3. **Search the saved file** with `rg`/Grep instead of reading it whole. Or dispatch an `explore` subagent: "grep `__init__|writeAsVectorFormatV3|Deprecated` in <tool-output file>" to keep context clean.
 4. **Cross-check deprecation**: `Deprecated since` markers can render misaligned next to signatures. When ambiguous, consult the C++ header on the matching release branch of `github.com/qgis/QGIS` (e.g. `release-4_2` → `src/core/vector/qgsvectorlayer.h`) — the `\deprecated` / `\since` comments adjacent to the declaration are the ground truth.

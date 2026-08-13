@@ -22,7 +22,7 @@ Target version is resolved by probing the machine instead of guessing: existing 
 ## References
 
 - PyQGIS 4.2 API docs: https://qgis.org/pyqgis/4.2/
-- QGIS user docs / cookbook (docs.qgis.org) for usage patterns: local `qgis-docs` skill
+- QGIS user docs / cookbook (usage patterns): https://docs.qgis.org
 
 ## License
 
