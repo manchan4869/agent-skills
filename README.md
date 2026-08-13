@@ -12,6 +12,7 @@ A curated collection of reusable agent skills for AI coding assistants.
 |---|---|---|
 | [amap-lbs-skill](amap-lbs-skill/) | AMap (Gaode) LBS comprehensive service: POI search, route planning, geocoding, weather, static maps, zero runtime dependencies (curl only).<br/>高德地图综合服务：POI 搜索、路径规划、地理编码、天气、静态地图等，零运行时依赖（仅 curl）。 | Chinese / 中文 |
 | [qgis4-qt6-compat](qgis4-qt6-compat/) | PyQGIS compatibility guide for QGIS 4.x / Qt6: import rules, enum scoping, common porting errors, API verification script.<br/>QGIS 4.x / Qt6 下 PyQGIS 兼容指南：导入规则、枚举作用域、常见移植错误及 API 校验脚本。 | English / 英文 |
+| [pyqgis-api-reference](pyqgis-api-reference/) | Exact QGIS 4.2 PyQGIS API lookup: URL patterns for qgis.org/pyqgis class pages, big-page reading strategy, verified QGIS 3->4 differences (removed encoding args, writeAsVectorFormatV3, PyQt6).<br/>QGIS 4.2 PyQGIS API 精确查询：qgis.org/pyqgis 类页面 URL 规律、大页面读取策略、已验证的 QGIS 3->4 差异（encoding 参数移除、writeAsVectorFormatV3、PyQt6）。 | English / 英文 |
 
 ## Installation / 安装
 
@@ -22,6 +23,7 @@ npx skills add manchan4869/agent-skills
 # or specify skills / 或指定安装某个技能
 npx skills add manchan4869/agent-skills --skill amap-lbs-skill
 npx skills add manchan4869/agent-skills --skill qgis4-qt6-compat
+npx skills add manchan4869/agent-skills --skill pyqgis-api-reference
 ```
 
 ### Manually / 手动安装
@@ -40,3 +42,4 @@ Skills are added when they are complete, self-contained, and reusable beyond a s
 
 - `amap-lbs-skill`: MIT (c) AMap Open Platform
 - `qgis4-qt6-compat`: MIT
+- `pyqgis-api-reference`: MIT
