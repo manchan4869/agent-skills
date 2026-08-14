@@ -182,3 +182,7 @@ https://a.amap.com/jsapi_demo_show/static/openclaw/travel_plan.html?data=<encode
 ## License
 
 MIT
+
+本技能为对高德地图开放平台公开接口文档的整理与补充，接口事实信息（名称/参数/字段）来源于[高德地图开放平台](https://lbs.amap.com/)官方公开文档，不构成官方产品。技能内容的编译与整理版权归 `manchan4869`。使用时请遵守[高德开放平台服务条款](https://lbs.amap.com/pages/terms/)。
+
+This skill is an independent compilation/supplement based on AMap Open Platform's public API documentation. API facts (names/parameters/fields) are sourced from AMap's public docs; this is not an official AMap product. Compilation copyright (c) manchan4869. Use subject to [AMap Open Platform terms](https://lbs.amap.com/pages/terms/).

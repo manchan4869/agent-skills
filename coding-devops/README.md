@@ -35,3 +35,9 @@ An agent skill for operating the [CODING DevOps](https://coding.net) platform vi
 - CODING 帮助中心: https://coding.net/help
 - CODING OpenAPI 文档: https://coding.net/help/openapi
 - SSH 公钥配置: https://coding.net/help/docs/repo/ssh/config.html
+
+## 来源声明 / Attribution
+
+本技能为对 CODING 官方公开文档与 OpenAPI 规范的整理，接口事实信息（Action 名/参数/字段）源自 CODING 官方文档，非官方产品，使用须遵守其服务条款。编译版权 (c) manchan4869。
+
+This skill is an independent compilation based on CODING's public documentation and OpenAPI specification. API facts (action names/parameters/fields) are sourced from CODING official docs; this is not an official product. Compilation copyright (c) manchan4869. Use subject to CODING's terms of service.

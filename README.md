@@ -42,7 +42,7 @@ Skills are added when they are complete, self-contained, and reusable beyond a s
 
 ## License / 许可证
 
-- `coding-devops`: MIT
-- `amap-lbs-skill`: MIT (c) AMap Open Platform
-- `qgis4-qt6-compat`: MIT
-- `pyqgis-api-reference`: MIT
+- `amap-lbs-skill`: MIT (c) manchan4869 (based on AMap Open Platform public API docs)
+- `coding-devops`: MIT (c) manchan4869 (based on CODING official docs)
+- `qgis4-qt6-compat`: MIT (c) manchan4869
+- `pyqgis-api-reference`: MIT (c) manchan4869
