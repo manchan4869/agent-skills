@@ -1,9 +1,10 @@
 ---
 name: coding-devops
 description: Use when the user needs to operate the CODING DevOps platform (coding.net) via its OpenAPI or Git — verify an access token, list projects/repositories, browse repository files, read file content, list branches/commits/merge requests, or clone/pull/push code over SSH. Triggers include mentions of "CODING", "e.coding.net", "coding.net/help/openapi", "CODING OpenAPI", "DescribeCodingCurrentUser", "DescribeGitFiles", "personal access token 个人访问令牌", "CODING 项目/仓库/合并请求/MR", or any request to call CODING platform APIs with curl.
-version: 1.0.0
 license: MIT
 compatibility: curl, git
+metadata:
+  version: "1.0.0"
 ---
 
 # CODING DevOps 平台操作 Skill

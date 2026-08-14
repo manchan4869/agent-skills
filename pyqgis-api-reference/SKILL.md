@@ -1,7 +1,8 @@
 ---
 name: pyqgis-api-reference
 description: Use when writing QGIS 4 plugins or scripts and need exact PyQGIS API signatures, parameters, enums, return types, or deprecation status for a specific QGIS version (resolved by probing the machine's existing env vars / installed QGIS, default 4.2); when the QGIS-Documentation cookbook (4.4-dev) may drift from the target version; or when checking whether an API changed between QGIS 3 and QGIS 4. Do NOT use for user-manual behavior questions (use the docs.qgis.org user manual instead).
-version: 1.2.0
+metadata:
+  version: "1.2.0"
 ---
 
 # PyQGIS API Reference (qgis.org/pyqgis)

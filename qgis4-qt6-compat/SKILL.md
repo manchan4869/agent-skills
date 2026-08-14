@@ -1,7 +1,8 @@
 ---
 name: qgis4-qt6-compat
 description: Use when writing PyQGIS code for QGIS 4.x (Qt6) via qgis_execute_code or scripts, or when facing errors like "has no attribute", "unexpected type", "no attribute", "cannot import name", "argument ... has unexpected type", "arguments did not match any overloaded call", PyQt5 import errors, or deprecated API removals in QGIS 4 / Qt 6. Also use when porting QGIS 3.x PyQGIS code or plugins to QGIS 4.x Qt6.
-version: 1.0.0
+metadata:
+  version: "1.0.0"
 ---
 
 # QGIS 4 / Qt6 PyQGIS Compatibility
