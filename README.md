@@ -10,6 +10,7 @@ A curated collection of reusable agent skills for AI coding assistants.
 
 | Skill | Description / 描述 | Language / 语言 |
 |---|---|---|
+| [coding-devops](coding-devops/) | CODING DevOps platform operations via OpenAPI and Git: token verification, list projects/repositories, browse repo files, read file content, branches/commits/merge requests, SSH clone/push.<br/>CODING DevOps 平台操作：OpenAPI 认证与常用接口（验证令牌、列项目/仓库、浏览仓库文件、读取文件内容、分支/提交/合并请求）、SSH 访问与安全建议。 | Chinese / 中文 |
 | [amap-lbs-skill](amap-lbs-skill/) | AMap (Gaode) LBS comprehensive service: POI search, route planning, geocoding, weather, static maps, zero runtime dependencies (curl only).<br/>高德地图综合服务：POI 搜索、路径规划、地理编码、天气、静态地图等，零运行时依赖（仅 curl）。 | Chinese / 中文 |
 | [qgis4-qt6-compat](qgis4-qt6-compat/) | PyQGIS compatibility guide for QGIS 4.x / Qt6: import rules, enum scoping, common porting errors, API verification script.<br/>QGIS 4.x / Qt6 下 PyQGIS 兼容指南：导入规则、枚举作用域、常见移植错误及 API 校验脚本。 | English / 英文 |
 | [pyqgis-api-reference](pyqgis-api-reference/) | Exact PyQGIS API lookup: URL patterns for qgis.org/pyqgis class pages, big-page reading strategy, target version resolved by probing the machine (env vars / qgis --version / MCP), verified QGIS 3->4 differences (removed encoding args, writeAsVectorFormatV3, PyQt6).<br/>PyQGIS API 精确查询：qgis.org/pyqgis 类页面 URL 规律、大页面读取策略、目标版本自动探测（环境变量 / qgis --version / MCP）、已验证的 QGIS 3->4 差异（encoding 参数移除、writeAsVectorFormatV3、PyQt6）。 | English / 英文 |
@@ -21,6 +22,7 @@ A curated collection of reusable agent skills for AI coding assistants.
 ```bash
 npx skills add manchan4869/agent-skills
 # or specify skills / 或指定安装某个技能
+npx skills add manchan4869/agent-skills --skill coding-devops
 npx skills add manchan4869/agent-skills --skill amap-lbs-skill
 npx skills add manchan4869/agent-skills --skill qgis4-qt6-compat
 npx skills add manchan4869/agent-skills --skill pyqgis-api-reference
@@ -40,6 +42,7 @@ Skills are added when they are complete, self-contained, and reusable beyond a s
 
 ## License / 许可证
 
+- `coding-devops`: MIT
 - `amap-lbs-skill`: MIT (c) AMap Open Platform
 - `qgis4-qt6-compat`: MIT
 - `pyqgis-api-reference`: MIT
