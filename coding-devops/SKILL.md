@@ -216,7 +216,7 @@ curl -s -X POST 'https://e.coding.net/open-api' \
 ## 常见陷阱与注意事项
 
 - **Action 名必须与规范完全一致**，大小写敏感（如 `DescribeCodingCurrentUser` 不是 `describeCodingCurrentUser`）。
-- **认证头写错**：个人令牌是 `Authorization: token xxx`；OAuth 是 `Authorization: Bearer xxx`；项目令牌是 `Authorization: Basic base64...`。把 token 误写成 Bearer 会 401。
+- **认证头写错**：个人令牌是 `Authorization: token {token}`，不是 `Authorization: Bearer {token}` 或 `Authorization: Basic {token}`；token 误写成 Bearer 会 401。
 - **请求体必须带 `Content-Type: application/json`**，Action 放在 JSON 体里，不是 URL query。
 - **先查项目/仓库 ID**：多数接口要 `ProjectId`/`DepotId`，可先用 `DescribeCodingProjects` + `DescribeMyDepots`/`DescribeProjectDepots` 拿到。
 - **`DepotId` 与 `DepotPath` 二选一**：`DepotPath` 形如 `团队/项目/仓库`（如 `coding/repo/1`），部分接口两者都支持。

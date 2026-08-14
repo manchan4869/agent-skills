@@ -5,7 +5,7 @@
 **核心能力：**
 
 - OpenAPI 统一调用方式：`POST https://e.coding.net/open-api` + JSON body（`Action` 字段）
-- 三种认证：个人访问令牌（`Authorization: token xxx`，推荐给 Agent 用）、OAuth 2.0（Bearer）、项目令牌（Basic）
+- 三种认证：个人访问令牌（`Authorization: token {token}`，推荐 Agent 用）、OAuth 2.0（Bearer）、项目令牌（Basic）
 - 令牌获取与安全建议：只读最小权限、令牌仅创建时可见一次、先建后删
 - 常用接口：`DescribeCodingCurrentUser`（验证令牌）、`DescribeCodingProjects`、`DescribeMyDepots`、`DescribeProjectDepots`、`DescribeGitFiles`、`DescribeGitBlobRaw`、`DescribeGitBranches`、`DescribeProjectDepotCommits`、`DescribeDepotMergeRequests`
 - SSH 访问：`ssh -T git@e.coding.net`、密钥生成、个人公钥/部署公钥/团队部署公钥区别
@@ -22,7 +22,7 @@ An agent skill for operating the [CODING DevOps](https://coding.net) platform vi
 **Capabilities:**
 
 - Unified API call: `POST https://e.coding.net/open-api` with a JSON body containing an `Action` field
-- Three auth methods: personal access token (`Authorization: token <token>` — recommended for agents), OAuth 2.0 (`Bearer`), project token (`Basic`)
+- Three auth methods: personal access token (`Authorization: token {token}` — recommended for agents), OAuth 2.0 (`Bearer`), project token (`Basic`)
 - Token lifecycle & security: least-privilege read-only scopes, token visible only once at creation, create-new-before-delete-old
 - Key actions: `DescribeCodingCurrentUser` (token verification), `DescribeCodingProjects`, `DescribeMyDepots`, `DescribeProjectDepots`, `DescribeGitFiles`, `DescribeGitBlobRaw`, `DescribeGitBranches`, `DescribeProjectDepotCommits`, `DescribeDepotMergeRequests`
 - SSH access: `ssh -T git@e.coding.net`, key generation, differences between account SSH key / deploy key / team deploy key
